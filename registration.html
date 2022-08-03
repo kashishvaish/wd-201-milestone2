@@ -1,269 +1,273 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/form.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/form.css" />
     <title>Registration Form</title>
     <style>
-        * {
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        }    
+      * {
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+      }
 
-        .container {
-            padding: 30px;
-            min-height: 100%;
-            margin-bottom: 220px;
-        }
+      .container {
+        padding: 30px;
+        min-height: 100%;
+        margin-bottom: 220px;
+      }
 
-        .navbar {
-            background-color: #003B46;
-            padding: 15px;
-            text-align: right;
-            font-size: larger;
-        }
+      .navbar {
+        background-color: #003b46;
+        padding: 15px;
+        text-align: right;
+        font-size: larger;
+      }
 
-        .navbar a {
-            color: #C4DFE6;
-            text-decoration: none;
-            margin-left: 30px;
-        }
+      .navbar a {
+        color: #c4dfe6;
+        text-decoration: none;
+        margin-left: 30px;
+      }
 
-        .navbar a:hover {
-            color: #ffffff;
-        }
+      .navbar a:hover {
+        color: #ffffff;
+      }
 
-        .heading {
-            color: #003B46;
-            text-align: center;
-            margin: 40px;
-        }
+      .heading {
+        color: #003b46;
+        text-align: center;
+        margin: 40px;
+      }
 
-        .homeContainer {
-            text-align: center;
-        }
+      .homeContainer {
+        text-align: center;
+      }
 
-        .title {
-            color: #9daeb3;
-            font-size: xx-large;
-        }
-        
-        .button {
-            display: inline-block;
-            margin-top: 30px;
-            padding: 20px;
-            text-align: center;
-            background-color: #cccccc;
-            text-decoration: none;
-            color: #003B46;
-            font-weight: bolder;
-            border: 5px solid #003B46;
-        }
+      .title {
+        color: #9daeb3;
+        font-size: xx-large;
+      }
 
-        .button:hover {
-            border: 5px solid #07575B;
-            background-color: #aaaaaaad;
-            color: #ffffff;
-        }
+      .button {
+        display: inline-block;
+        margin-top: 30px;
+        padding: 20px;
+        text-align: center;
+        background-color: #cccccc;
+        text-decoration: none;
+        color: #003b46;
+        font-weight: bolder;
+        border: 5px solid #003b46;
+      }
 
-        footer {
-            background-color: #003B46;
-            bottom: 0;
-            display: flex;
-            justify-content: space-evenly;
-            height: 200px;
-            padding: 40px;
-        }
+      .button:hover {
+        border: 5px solid #07575b;
+        background-color: #aaaaaaad;
+        color: #ffffff;
+      }
 
-        .footerHeading {
-            color: #C4DFE6;
-            margin-top: 30px;
-            margin-bottom: 30px;
-            font-size: larger;
-        }
+      footer {
+        background-color: #003b46;
+        bottom: 0;
+        display: flex;
+        justify-content: space-evenly;
+        height: 200px;
+        padding: 40px;
+      }
 
-        .aboutBody {
-            color: #ffffff;
-            font-size: large;
-            width: 70%;
-        }
+      .footerHeading {
+        color: #c4dfe6;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        font-size: larger;
+      }
 
-        .name {
-            color: red;
-        }
+      .aboutBody {
+        color: #ffffff;
+        font-size: large;
+        width: 70%;
+      }
 
-        .contactBody a {
-            margin-right: 30px;
-        }
-        table {
-            width: 90%;
-            margin: auto;
-        }
+      .name {
+        color: red;
+      }
 
-        th {
-            background-color: #003B46;
-            color: #ffffff;
-            padding: 5px;
-            border-radius: 5px;
-        }
+      .contactBody a {
+        margin-right: 30px;
+      }
+      table {
+        width: 90%;
+        margin: auto;
+      }
 
-        tr {
-            background-color: #C4DFE6;
-            padding: 5px;
-            border-radius: 5px;
-        }
+      th {
+        background-color: #003b46;
+        color: #ffffff;
+        padding: 5px;
+        border-radius: 5px;
+      }
 
-        td {
-            padding: 5px;
-        }
+      tr {
+        background-color: #c4dfe6;
+        padding: 5px;
+        border-radius: 5px;
+      }
 
-        tr:hover {
-            background-color: #07575B;
-            color: #ffffff;
-        }
+      td {
+        padding: 5px;
+      }
 
-        .form {
-            width: 400px;
-            margin: auto;
-        }
+      tr:hover {
+        background-color: #07575b;
+        color: #ffffff;
+      }
 
-        input {
-            display: block;
-            width: 100%;
-            margin-bottom: 10px;
-            padding: 5px;
-        }
+      .form {
+        width: 400px;
+        margin: auto;
+      }
 
-        .checkbox {
-            display: inline-block;
-            width: 10px;
-        }
+      input {
+        display: block;
+        width: 100%;
+        margin-bottom: 10px;
+        padding: 5px;
+      }
 
-        .addButton {
-            display: inline-block;
-            background-color: #86AC41;
-            color: #ffffff;
-        }
+      .checkbox {
+        display: inline-block;
+        width: 10px;
+      }
 
-        .notification {
-            display: flex;
-            justify-content: space-between;
-            width: 380px;
-            margin: auto;
-            background-color: #5BC8AC;
-            padding: 10px;
-            border-radius: 5px;
-            visibility: hidden;
-            margin-bottom: 15px;
-        }
+      .addButton {
+        display: inline-block;
+        background-color: #86ac41;
+        color: #ffffff;
+      }
 
-        .notificationClose {
-            color: #ffffff;
-        }
+      .notification {
+        display: flex;
+        justify-content: space-between;
+        width: 380px;
+        margin: auto;
+        background-color: #5bc8ac;
+        padding: 10px;
+        border-radius: 5px;
+        visibility: hidden;
+        margin-bottom: 15px;
+      }
+
+      .notificationClose {
+        color: #ffffff;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <nav class="navbar">
-        <a href="/">Home</a>
-        <a href="/project">Projects</a>
+      <a href="/">Home</a>
+      <a href="/project">Projects</a>
     </nav>
 
     <div class="container">
+      <h2 class="heading">Registration Form</h2>
+      <div class="notification" id="notification">
+        <div id="notificationBody"></div>
+        <div class="notificationClose" id="notificationClose">X</div>
+      </div>
+      <form id="user_form" class="form">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required />
 
-        <h2 class="heading">Registration Form</h2>
-        <div class="notification" id="notification">
-            <div id="notificationBody"></div>
-            <div class="notificationClose" id="notificationClose">X</div>
-        </div>
-        <form id="user_form" class="form">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" required>
-            
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required>
-        
-            <label for="password">Password</label>
-            <input type="password" id="password" name="password" required>
-        
-            <label for="dob">Date of Birth</label>
-            <input type="date" id="dob" name="dob" required>
-            <p class="dobError" id="dobError"></p>
-        
-            <input type="checkbox" id="acceptTerms" name="acceptTerms" class="checkbox">
-            <label for="acceptTerms">Accept Terms & Conditions</label>
-            
-            <input type="submit" value="ADD" class="addButton" id="add"/>
-        </form>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required />
 
-        <h2 class="heading">Entries</h2>
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required />
 
-        <div id="user-entries"></div>
-    
+        <label for="dob">Date of Birth</label>
+        <input type="date" id="dob" name="dob" required />
+        <p class="dobError" id="dobError"></p>
+
+        <input
+          type="checkbox"
+          id="acceptTerms"
+          name="acceptTerms"
+          class="checkbox"
+        />
+        <label for="acceptTerms">Accept Terms & Conditions</label>
+
+        <input type="submit" value="ADD" class="addButton" id="add" />
+      </form>
+
+      <h2 class="heading">Entries</h2>
+
+      <div id="user-entries"></div>
     </div>
 
     <script>
-        const email = document.getElementById("email");
+      const email = document.getElementById("email");
 
-        const dob = document.getElementById("dob");
-        const date = new Date(dob.value);
-        var minValidDob = new Date();
-        minValidDob.setFullYear(minValidDob.getFullYear() - 55);
-        var dd = minValidDob.getDate();
-        var mm = minValidDob.getMonth() + 1;
-        if (dd < 10) {
+      const dob = document.getElementById("dob");
+      const date = new Date(dob.value);
+      var minValidDob = new Date();
+      minValidDob.setFullYear(minValidDob.getFullYear() - 55);
+      var dd = minValidDob.getDate();
+      var mm = minValidDob.getMonth() + 1;
+      if (dd < 10) {
         dd = "0" + dd;
-        }
-        if (mm < 10) {
+      }
+      if (mm < 10) {
         mm = "0" + mm;
-        }
-        minValidDob = minValidDob.getFullYear() + "-" + mm + "-" + dd;
+      }
+      minValidDob = minValidDob.getFullYear() + "-" + mm + "-" + dd;
 
-        var maxValidDob = new Date();
-        maxValidDob.setFullYear(maxValidDob.getFullYear() - 18);
-        dd = maxValidDob.getDate();
-        mm = maxValidDob.getMonth() + 1;
-        if (dd < 10) {
+      var maxValidDob = new Date();
+      maxValidDob.setFullYear(maxValidDob.getFullYear() - 18);
+      dd = maxValidDob.getDate();
+      mm = maxValidDob.getMonth() + 1;
+      if (dd < 10) {
         dd = "0" + dd;
-        }
-        if (mm < 10) {
+      }
+      if (mm < 10) {
         mm = "0" + mm;
-        }
-        maxValidDob = maxValidDob.getFullYear() + "-" + mm + "-" + dd;
-        document.getElementById("dob").min = minValidDob;
-        document.getElementById("dob").max = maxValidDob;
+      }
+      maxValidDob = maxValidDob.getFullYear() + "-" + mm + "-" + dd;
+      document.getElementById("dob").min = minValidDob;
+      document.getElementById("dob").max = maxValidDob;
 
-        email.addEventListener("input", function (event) {
+      email.addEventListener("input", function (event) {
         if (email.validity.typeMismatch) {
-            email.setCustomValidity("This is not a valid email address!");
-            email.reportValidity();
+          email.setCustomValidity("This is not a valid email address!");
+          email.reportValidity();
         } else {
-            email.setCustomValidity("");
+          email.setCustomValidity("");
         }
-        });
+      });
 
-        let userEntries = localStorage.getItem("user-entries");
-        if (userEntries) {
+      let userEntries = localStorage.getItem("user-entries");
+      if (userEntries) {
         userEntries = JSON.parse(userEntries);
-        } else {
+      } else {
         userEntries = [];
-        }
+      }
 
-        const displayEntries = () => {
+      const displayEntries = () => {
         const savedUserEntries = localStorage.getItem("user-entries");
         let entries = "";
         if (savedUserEntries) {
-            const parsedUserEntries = JSON.parse(savedUserEntries);
-            entries = parsedUserEntries
+          const parsedUserEntries = JSON.parse(savedUserEntries);
+          entries = parsedUserEntries
             .map((entry) => {
-                const name = `<td>${entry.name}</td>`;
-                const email = `<td>${entry.email}</td>`;
-                const password = `<td>${entry.password}</td>`;
-                const dob = `<td>${entry.dob}</td>`;
-                const acceptTerms = `<td>${entry.acceptTermsAndConditions}</td>`;
-                const row = `<tr>${name} ${email} ${password} ${dob} ${acceptTerms}</tr>`;
-                return row;
+              const name = `<td>${entry.name}</td>`;
+              const email = `<td>${entry.email}</td>`;
+              const password = `<td>${entry.password}</td>`;
+              const dob = `<td>${entry.dob}</td>`;
+              const acceptTerms = `<td>${entry.acceptTermsAndConditions}</td>`;
+              const row = `<tr>${name} ${email} ${password} ${dob} ${acceptTerms}</tr>`;
+              return row;
             })
             .join("\n");
         }
@@ -276,46 +280,46 @@
                 </tr>${entries} </table>`;
         let details = document.getElementById("user-entries");
         details.innerHTML = table;
-        };
+      };
 
-        const saveUserForm = (event) => {
+      const saveUserForm = (event) => {
         event.preventDefault();
         const name = document.getElementById("name").value;
         const email = document.getElementById("email").value;
         const password = document.getElementById("password").value;
         const dob = document.getElementById("dob").value;
         const acceptTermsAndConditions =
-            document.getElementById("acceptTerms").checked;
+          document.getElementById("acceptTerms").checked;
         const userDetails = {
-            name,
-            email,
-            password,
-            dob,
-            acceptTermsAndConditions,
+          name,
+          email,
+          password,
+          dob,
+          acceptTermsAndConditions,
         };
         userEntries.push(userDetails);
         localStorage.setItem("user-entries", JSON.stringify(userEntries));
-        document.getElementById("notificationBody").innerHTML = "Added Successfully!";
+        document.getElementById("notificationBody").innerHTML =
+          "Added Successfully!";
         document.getElementById("notification").style.visibility = "visible";
         const inputs = document.querySelectorAll(
-            "#name, #email, #password, #dob, #acceptTerms"
+          "#name, #email, #password, #dob, #acceptTerms"
         );
         inputs.forEach((input) => {
-            input.value = "";
+          input.value = "";
         });
         displayEntries();
-        };
+      };
 
-        let form = document.getElementById("user_form");
-        form.addEventListener("submit", saveUserForm, true);
-        displayEntries();
+      let form = document.getElementById("user_form");
+      form.addEventListener("submit", saveUserForm, true);
+      displayEntries();
 
-        const closeNotification = document.getElementById("notificationClose");
+      const closeNotification = document.getElementById("notificationClose");
 
-        closeNotification.addEventListener("click", function (event) {
+      closeNotification.addEventListener("click", function (event) {
         document.getElementById("notification").style.visibility = "hidden";
-        });
-
+      });
     </script>
-</body>
+  </body>
 </html>
